@@ -1,3 +1,20 @@
+let currentLang = 'tr';
+
+function toggleLanguage() {
+    currentLang = currentLang === 'tr' ? 'en' : 'tr';
+    const btn = document.getElementById('lang-toggle');
+    if (btn) {
+        btn.textContent = currentLang === 'tr' ? '🇬🇧 EN' : '🇹🇷 TR';
+    }
+    const navCv = document.getElementById('nav-cv-btn');
+    if (navCv) {
+        navCv.href = currentLang === 'tr' ? 'Talha_Gurler_CV_TR.pdf' : 'Talha_Gurler_CV_EN.pdf';
+    }
+    document.querySelectorAll('[data-tr][data-en]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + currentLang);
+    });
+}
+
 // Smooth Scrolling for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -12,24 +29,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Dynamic Blob Following Mouse (Subtle Effect)
-const blob1 = document.querySelector('.blob-1');
-const blob2 = document.querySelector('.blob-2');
-
-document.addEventListener('mousemove', (e) => {
-    const x = e.clientX / window.innerWidth;
-    const y = e.clientY / window.innerHeight;
-    
-    // Very subtle movement based on mouse
-    blob1.style.transform = `translate(${x * 30}px, ${y * 30}px)`;
-    blob2.style.transform = `translate(${x * -40}px, ${y * -40}px)`;
-});
-
 // Reveal Elements on Scroll
 const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.1
+    threshold: 0.08
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
@@ -44,7 +48,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.glass-panel').forEach(panel => {
     panel.style.opacity = '0';
-    panel.style.transform = 'translateY(20px)';
-    panel.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    panel.style.transform = 'translateY(16px)';
+    panel.style.transition = 'opacity 0.45s ease-out, transform 0.45s ease-out';
     observer.observe(panel);
 });

@@ -3,39 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Talha Gürler - Bilgisayar Mühendisi Adayı | AI/ML, Quantitative FinTech & Full-Stack Yazılım Geliştirici Portfolyosu">
-    <title>Talha Gürler | Yazılım & Yapay Zeka Portfolyosu</title>
+    <meta name="description" content="Talha Gürler — Kocaeli Üniversitesi Bilgisayar Mühendisliği | Yapay Zeka (AI/ML & Multimodal RAG), Kantitatif FinTech (Binance Futures XGBoost & Borsa Faktör Motoru) ve Full-Stack/Mobil Yazılım Geliştirici Portfolyosu">
+    <title>Talha Gürler | AI/ML, Quant FinTech & Full-Stack Mühendislik Portfolyosu</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
     <nav class="navbar">
-        <div class="logo">TG.</div>
+        <div class="logo">TG<span class="dot">.</span></div>
         <ul class="nav-links">
-            <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#about">Hakkımda</a></li>
-            <li><a href="#projects">Projeler (8)</a></li>
-            <li><a href="#contact">İletişim</a></li>
+            <li><a href="#home" data-tr="Ana Sayfa" data-en="Home">Ana Sayfa</a></li>
+            <li><a href="#metrics" data-tr="Metrikler & Yetkinlikler" data-en="Metrics & Skills">Metrikler & Yetkinlikler</a></li>
+            <li><a href="#projects" data-tr="Projeler (8)" data-en="Projects (8)">Projeler (8)</a></li>
+            <li><a href="#cv-section" data-tr="Kurumsal CV (PDF)" data-en="Corporate CV (PDF)">Kurumsal CV (PDF)</a></li>
+            <li><a href="#contact" data-tr="İletişim" data-en="Contact">İletişim</a></li>
         </ul>
+        <div class="nav-actions">
+            <button id="lang-toggle" class="lang-btn" onclick="toggleLanguage()" title="Dil Değiştir / Switch Language">
+                🇬🇧 EN
+            </button>
+            <a href="Talha_Gurler_CV_TR.pdf" id="nav-cv-btn" target="_blank" class="btn nav-cv-link" data-tr="📄 CV İndir (PDF)" data-en="📄 Download CV (PDF)">
+                📄 CV İndir (PDF)
+            </a>
+        </div>
     </nav>
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h2 class="subtitle">Merhaba, Ben</h2>
+            <div class="hero-badge" data-tr="🎓 Kocaeli Üniversitesi • Bilgisayar Mühendisliği" data-en="🎓 Kocaeli University • Computer Engineering">
+                🎓 Kocaeli Üniversitesi • Bilgisayar Mühendisliği
+            </div>
             <h1 class="title">Talha Gürler</h1>
-            <p class="description">
-                Kocaeli Üniversitesi Bilgisayar Mühendisliği öğrencisi; Yapay Zeka (Multimodal RAG & Computer Vision), Kantitatif FinTech ve Modern Full-Stack/Mobil sistemler geliştiren bir
-                <span class="highlight">Yazılım Geliştiricisi</span>.
+            <h2 class="role-subtitle" data-tr="Yapay Zeka (AI/ML), Kantitatif FinTech & Full-Stack Yazılım Geliştirici" data-en="AI/ML, Quantitative FinTech & Full-Stack Software Developer">
+                Yapay Zeka (AI/ML), Kantitatif FinTech & Full-Stack Yazılım Geliştirici
+            </h2>
+            <p class="description" data-tr="Multimodal RAG ve Bilgisayarlı Görü (Gemini Vision, ChromaDB, Whisper), Çift Motorlu Algoritmik Finans (Binance Futures XGBoost & Küresel Borsa Tekil Hisse/Faktör Analizi) ile Offline-First Web/Mobil (React 19, TypeScript, C99, Java) mimarilerinde uçtan uca üretim seviyesinde sistemler geliştiriyorum." data-en="Architecting production-grade systems across Multimodal RAG & Computer Vision (Gemini Vision, ChromaDB, Whisper), Dual-Engine Quantitative Finance (Binance Futures XGBoost & Global Equities Single-Stock/Factor Analytics), and Offline-First Web/Mobile & Systems Engineering (React 19, TypeScript, C99, Java).">
+                Multimodal RAG ve Bilgisayarlı Görü (Gemini Vision, ChromaDB, Whisper), Çift Motorlu Algoritmik Finans (Binance Futures XGBoost & Küresel Borsa Tekil Hisse/Faktör Analizi) ile Offline-First Web/Mobil (React 19, TypeScript, C99, Java) mimarilerinde uçtan uca üretim seviyesinde sistemler geliştiriyorum.
             </p>
             <div class="cta-buttons">
-                <a href="#projects" class="btn primary-btn">Projelerimi İncele</a>
+                <a href="#projects" class="btn primary-btn" data-tr="🚀 Projelerimi İncele (8)" data-en="🚀 Explore Projects (8)">🚀 Projelerimi İncele (8)</a>
+                <a href="Talha_Gurler_CV_TR.pdf" target="_blank" class="btn cv-btn-tr">📄 Türkçe CV (PDF)</a>
+                <a href="Talha_Gurler_CV_EN.pdf" target="_blank" class="btn cv-btn-en">📄 English CV (PDF)</a>
                 <a href="https://github.com/talha4111" target="_blank" class="btn secondary-btn">
-                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
                         <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.745.083-.73.083-.73 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.809 1.304 3.492.997.108-.775.418-1.305.76-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.467-2.38 1.235-3.22-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.98-.398 3-.403 1.02.005 2.043.137 3 .403 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.803 5.625-5.475 5.92.43.37.823 1.102.823 2.222v3.293c0 .32.218.694.825.576C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
                     </svg>
                     GitHub (@talha4111)
@@ -44,61 +59,121 @@
         </div>
         <div class="hero-image-container">
             <div class="glass-card tech-stack-card">
-                <h3>Teknoloji Yığınım</h3>
+                <h3 data-tr="⚡ Çekirdek Mühendislik Alanlarım" data-en="⚡ Core Engineering Domains">⚡ Çekirdek Mühendislik Alanlarım</h3>
                 <div class="skills-grid">
-                    <span class="skill-tag">Python & AI/ML</span>
-                    <span class="skill-tag">LLM & RAG</span>
-                    <span class="skill-tag">React & TypeScript</span>
-                    <span class="skill-tag">Quant FinTech</span>
-                    <span class="skill-tag">Java & C99</span>
-                    <span class="skill-tag">SQL & ChromaDB</span>
+                    <span class="skill-tag">🤖 XGBoost, Optuna & AI/ML</span>
+                    <span class="skill-tag">🧠 Multimodal RAG & ChromaDB</span>
+                    <span class="skill-tag">📊 Binance Futures & QuantConnect</span>
+                    <span class="skill-tag">⚛️ React 19, TS 6 & Capacitor APK</span>
+                    <span class="skill-tag">⚙️ C99 Sistem & Java 11+ OOP</span>
+                    <span class="skill-tag">🔐 PBKDF2, TOTP 2FA & WAF</span>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="about" class="about-section">
-        <h2 class="section-title">Hakkımda</h2>
-        <div class="about-content">
-            <div class="about-text glass-panel">
-                <p>Kocaeli Üniversitesi Bilgisayar Mühendisliği bölümünde öğrenim görüyorum. Yapay zeka mühendisliğini (Multimodal RAG, Görüntü İşleme, Doğal Dil İşleme), kantitatif finans algoritmalarını ve modern full-stack/mobil yazılım mimarilerini birleştirerek gerçek dünya problemlerine uçtan uca çözümler üretiyorum.</p>
-                <p>Geliştirdiğim sistemlerde yalnızca algoritmik doğruluğa değil; siber güvenlik (PBKDF2, TOTP 2FA, WAF), çevrimdışı çalışabilirlik (Offline-First IndexedDB) ve düşük gecikmeli sistem tasarımına odaklanıyorum.</p>
+    <!-- IMPACT METRICS & TECHNICAL SKILLS MATRIX -->
+    <section id="metrics" class="metrics-section">
+        <div class="stats-grid">
+            <div class="stat-card glass-panel">
+                <div class="stat-number">8</div>
+                <div class="stat-label" data-tr="Üretim Seviyesi Açık Kaynak Proje" data-en="Production-Grade Open Source Projects">Üretim Seviyesi Açık Kaynak Proje</div>
+            </div>
+            <div class="stat-card glass-panel">
+                <div class="stat-number">2,837</div>
+                <div class="stat-label" data-tr="Örneklem Dışı (OOS) Triple-Barrier AI Kalibrasyonu" data-en="Out-of-Sample Triple-Barrier AI Events">Örneklem Dışı (OOS) Triple-Barrier AI Kalibrasyonu</div>
+            </div>
+            <div class="stat-card glass-panel">
+                <div class="stat-number">-15.0%</div>
+                <div class="stat-label" data-tr="Özgün C99 Zamanlama Süresi İyileştirmesi (%96.76 Verim)" data-en="Custom C99 Scheduling Makespan Reduction (96.76% Util.)">Özgün C99 Zamanlama Süresi İyileştirmesi (%96.76 Verim)</div>
+            </div>
+            <div class="stat-card glass-panel">
+                <div class="stat-number">100+</div>
+                <div class="stat-label" data-tr="ABD Hissesi SEC EDGAR PIT & Binance Kripto Motoru" data-en="US Equities SEC EDGAR PIT & Binance Crypto Engine">ABD Hissesi SEC EDGAR PIT & Binance Kripto Motoru</div>
+            </div>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 4rem;" data-tr="Teknik Yetkinlik Matrisi" data-en="Technical Competency Matrix">Teknik Yetkinlik Matrisi</h2>
+        <div class="competency-grid">
+            <div class="comp-card glass-panel">
+                <h3 data-tr="🤖 Yapay Zeka & Makine Öğrenmesi" data-en="🤖 AI & Machine Learning">🤖 Yapay Zeka & Makine Öğrenmesi</h3>
+                <p>XGBoost, Random Forest, Scikit-Learn, Optuna (Hiperparametre Optimizasyonu), Triple-Barrier Etiketleme, Brier Skill Kalibrasyonu, LangChain (LCEL), ChromaDB (Vektör DB), Google Gemini 2.5/2.0 Flash Vision & Embeddings, OpenAI Whisper (ASR), Hugging Face BERT, TensorFlow/Keras (Bi-LSTM), Sıfırdan KNN & CART Karar Ağacı (Gini Impurity).</p>
+            </div>
+            <div class="comp-card glass-panel">
+                <h3 data-tr="📈 Kantitatif Finans & Algoritmik Trading" data-en="📈 Quantitative Finance & Algorithmic Trading">📈 Kantitatif Finans & Algoritmik Trading</h3>
+                <p>Binance Futures API (CCXT), Emir Defteri Dengesizliği (<code>OB_Imbalance</code>), Fonlama Oranı & Açık Pozisyon Analizi, Interactive Brokers (TWS), QuantConnect (LEAN), SEC EDGAR Point-in-Time Veri Hattı, Tekil Hisse Faktör Çatışma Dedektörü, Walk-Forward Backtesting, FIFO Lot Muhasebesi.</p>
+            </div>
+            <div class="comp-card glass-panel">
+                <h3 data-tr="💻 Full-Stack, Mobil & Masaüstü" data-en="💻 Full-Stack, Mobile & Desktop">💻 Full-Stack, Mobil & Masaüstü</h3>
+                <p>Python, TypeScript 6, JavaScript (ES6+), React 19, Vite 8, Tailwind CSS 4, Zustand, Dexie.js (Offline-First IndexedDB), Capacitor 8 (Android APK), Flask (SSE Streaming), Streamlit (Çok Sayfalı FinTech Mimari), Java Swing (SwingWorker, Graphics2D), PyQt5.</p>
+            </div>
+            <div class="comp-card glass-panel">
+                <h3 data-tr="🛡️ Sistem Programlama, Veri & Güvenlik" data-en="🛡️ Systems Programming, Data & Security">🛡️ Sistem Programlama, Veri & Güvenlik</h3>
+                <p>C (C99), Java (Java 11+), SQL (SQLite, PostgreSQL, 3NF Normalizasyon), NIST PBKDF2-SHA256 (310.000 İterasyon), RFC 6238 TOTP 2FA, Uygulama Katmanı WAF (Rate Limiter), Selenium WebDriver, Paramiko SSH/SFTP, Git, Vitest.</p>
             </div>
         </div>
     </section>
 
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="projects-section">
-        <h2 class="section-title">Öne Çıkan Mühendislik Projelerim</h2>
-        <div class="projects-grid">
-            <div class="project-card glass-panel">
-                <div class="project-header">
-                    <h3>📈 StockPredictionPro</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/talha4111/StockPredictionPro" target="_blank" title="GitHub">GitHub ↗</a>
-                    </div>
+        <h2 class="section-title" data-tr="Öne Çıkan Mühendislik Projelerim" data-en="Featured Engineering Projects">Öne Çıkan Mühendislik Projelerim</h2>
+
+        <!-- FLAGSHIP DUAL-ENGINE HIGHLIGHT CARD -->
+        <div class="flagship-card glass-panel">
+            <div class="flagship-header">
+                <div>
+                    <span class="flagship-badge" data-tr="★ AMİRAL GEMİSİ PROJE • ÇİFT MOTORLU (DUAL-ENGINE) MİMARİ" data-en="★ FLAGSHIP PROJECT • DUAL-ENGINE ARCHITECTURE">★ AMİRAL GEMİSİ PROJE • ÇİFT MOTORLU (DUAL-ENGINE) MİMARİ</span>
+                    <h3>📈 StockPredictionPro & QuantBot — Kripto Vadeli İşlemler (XGBoost) & Küresel Borsa Tekil Hisse / Faktör Platformu</h3>
                 </div>
-                <p class="project-desc">Çift motorlu ekosistem: 1) Binance Futures (CCXT) entegreli, Order Book Imbalance, Funding Rate ve Optuna destekli XGBoost Kripto Trading Motoru (QuantBot); 2) Tekil Hisse Analizi, Yatırım Komitesi, 4-Sütunlu Faktör Motoru ve Triple-Barrier AI içeren 10 sayfalık Borsa Platformu.</p>
-                <div class="project-techs">
-                    <span>Python</span>
-                    <span>XGBoost & AI</span>
-                    <span>QuantConnect</span>
-                    <span>Streamlit</span>
+                <a href="https://github.com/talha4111/StockPredictionPro" target="_blank" class="btn primary-btn">GitHub Repo ↗</a>
+            </div>
+            <div class="dual-engine-grid">
+                <div class="engine-box">
+                    <h4 data-tr="⚡ MOTOR 1: Kripto Vadeli İşlemler & Binance XGBoost Motoru (QuantBot/)" data-en="⚡ ENGINE 1: Crypto Futures & Binance XGBoost Execution Engine (QuantBot/)">⚡ MOTOR 1: Kripto Vadeli İşlemler & Binance XGBoost Motoru (QuantBot/)</h4>
+                    <ul>
+                        <li data-tr="Binance Futures (CCXT) ve Interactive Brokers (TWS) entegreli; her parite için özel eğitilen (n_estimators=500, Walk-Forward & Brier Skill kapılı) XGBoost yön sınıflandırıcıları." data-en="Integrated with Binance Futures (CCXT) and Interactive Brokers (TWS); per-symbol XGBoost directional classifiers (n_estimators=500, Walk-Forward & Brier Skill gated).">Binance Futures (CCXT) ve Interactive Brokers (TWS) entegreli; her parite için özel eğitilen (<code>n_estimators=500</code>, Walk-Forward & Brier Skill kapılı) <strong>XGBoost</strong> yön sınıflandırıcıları.</li>
+                        <li data-tr="Canlı Emir Defteri Dengesizliği (OB_Imbalance), Fonlama Oranı (Funding_Rate), Açık Pozisyon (Open_Interest), CHOP (testere piyasa filtresi), ADX ve Volume_ZScore öznitelikleri." data-en="Real-time Order Book Imbalance (OB_Imbalance), Funding Rate, Open Interest, CHOP (choppiness filter), ADX, and Volume_ZScore microstructure features.">Canlı <strong>Emir Defteri Dengesizliği (<code>OB_Imbalance</code>)</strong>, <strong>Fonlama Oranı</strong>, <strong>Açık Pozisyon (<code>Open_Interest</code>)</strong>, <code>CHOP</code>, <code>ADX</code> ve <code>Volume_ZScore</code> öznitelikleri.</li>
+                        <li data-tr="Ardışık zararda marjini 1.0x ➔ 0.30x düşüren savunma çarpanı, 24 saatlik Symbol Guard karantinası, tekil Hard-Stop senkronizasyonu, Binance Income Ledger mutabakatı ve Optuna optimizasyonu." data-en="Dynamic drawdown margin scaling (1.0x to 0.30x), 24h Symbol Guard quarantine, single Hard-Stop synchronization, Binance Income Ledger reconciliation, and Optuna tuning.">Ardışık zararda marjini <code>1.0x ➔ 0.30x</code> düşüren savunma çarpanı, 24 saatlik <strong>Symbol Guard</strong> karantinası, tekil Hard-Stop senkronizasyonu, Binance Income Ledger mutabakatı ve <strong>Optuna</strong> optimizasyonu.</li>
+                    </ul>
+                </div>
+                <div class="engine-box">
+                    <h4 data-tr="🏛️ MOTOR 2: Borsa Tekil Hisse Analizi, Faktör Motoru & 10 Sayfalık Web Platformu (web/)" data-en="🏛️ ENGINE 2: Single-Stock Deep Analysis, Factor Engine & 10-Page Web Platform (web/)">🏛️ MOTOR 2: Borsa Tekil Hisse Analizi, Faktör Motoru & 10 Sayfalık Web Platformu (web/)</h4>
+                    <ul>
+                        <li data-tr="Tekil Hisse Derinlemesine Röntgen & Yatırım Komitesi: Seçilen hisseler için 4 sütunlu faktör radarı, değer tuzağı/momentum çelişkilerini yakalayan Faktör Çatışma Dedektörü, Bilanço & Katalizör Laboratuvarı ve ATR kademeli giriş/SL/TP hesaplayıcısı." data-en="Single-Stock X-Ray & Investment Committee: 4-pillar factor radar, automated Factor Conflict Detector, Catalyst & Earnings Lab, and ATR-based staged entry/SL/TP calculators."><strong>Tekil Hisse Röntgeni & Yatırım Komitesi:</strong> Seçilen hisseler için 4 sütunlu faktör radarı, <strong>Faktör Çatışma Dedektörü</strong>, Bilanço & Katalizör Laboratuvarı ve ATR kademeli giriş/SL/TP hesaplayıcısı.</li>
+                        <li data-tr="Dip Avcısı & Kâr Koruma: 2.837 örneklem dışı olayda kalibre edilmiş Triple-Barrier (±1.8 ATR) Hibrit AI ile aşırı satım dönüşlerini puanlayan ve Telegram uyarısı gönderen tarayıcı." data-en="Dip & Profit-Protection Hunter: Triple-Barrier (±1.8 ATR) Hybrid AI calibrated across 2,837 out-of-sample events with instant Telegram alerts."><strong>Dip Avcısı & Kâr Koruma:</strong> <strong>2.837 örneklem dışı olayda</strong> kalibre edilmiş <strong>Triple-Barrier (±1.8 ATR) Hibrit AI</strong> ile aşırı satım dönüşlerini puanlayan ve Telegram bildirimi gönderen sistem.</li>
+                        <li data-tr="4-Sütunlu SEC EDGAR PIT Faktör Motoru (v3.1): 100+ ABD hissesini puanlayan, QuantConnect (2021–2026) ile doğrulanmış; FIFO lot muhasebesi, S&P 500 stres testi, TCMB/Yİ-ÜFE vergi modülü ve PBKDF2 + TOTP 2FA + WAF içeren 10 sayfalık Streamlit platformu." data-en="4-Pillar SEC EDGAR PIT Factor Engine (v3.1): Ranks 100+ US equities validated on QuantConnect (2021–2026); 10-page Streamlit platform with FIFO accounting, stress tests, tax indexing, PBKDF2, TOTP 2FA, and WAF."><strong>4-Sütunlu SEC EDGAR PIT Faktör Motoru (v3.1):</strong> 100+ ABD hissesini puanlayan, <strong>QuantConnect</strong> ile doğrulanmış; FIFO muhasebesi, S&P 500 stres testi ve <strong>PBKDF2 + TOTP 2FA + WAF</strong> içeren 10 sayfalık platform.</li>
+                    </ul>
                 </div>
             </div>
+            <div class="project-techs" style="margin-top: 1.2rem;">
+                <span>Python</span>
+                <span>XGBoost & Optuna</span>
+                <span>Binance Futures (CCXT)</span>
+                <span>Order Book Imbalance</span>
+                <span>Single-Stock Deep Analysis</span>
+                <span>QuantConnect</span>
+                <span>SEC EDGAR PIT</span>
+                <span>Streamlit (10 Sayfa)</span>
+                <span>TOTP 2FA & WAF</span>
+            </div>
+        </div>
 
+        <div class="projects-grid">
             <div class="project-card glass-panel">
                 <div class="project-header">
                     <h3>🥗 Makro Takip (sporproje)</h3>
                     <div class="project-links">
-                        <a href="https://github.com/talha4111/sporproje" target="_blank" title="GitHub">GitHub ↗</a>
+                        <a href="https://github.com/talha4111/sporproje" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc">Gemini 2.5 Flash Vision ile yemek fotoğrafından porsiyon ve makro hesaplayan, deterministik makro açığı çözücü, Open Food Facts barkod sağlık radarı ve IndexedDB içeren Offline-First PWA & Capacitor Android uygulaması.</p>
+                <p class="project-desc" data-tr="Gemini 2.5 Flash Vision ile yemek fotoğrafından porsiyon gramajı (estimatedGrams) ve makro hesaplayan, kalan makro açığını gramaj bazında çözen deterministik solveMacroGap algoritması, Open Food Facts barkod sağlık radarı (NOVA/Nutri-Score) ve Dexie.js IndexedDB içeren Offline-First PWA & Capacitor 8 Android APK uygulaması." data-en="Offline-First PWA & Capacitor 8 Android APK using Gemini 2.5 Flash Vision to estimate meal gram weights and macros from photos, featuring a deterministic solveMacroGap solver, Open Food Facts barcode health radar (NOVA/Nutri-Score), and Dexie.js IndexedDB persistence.">Gemini 2.5 Flash Vision ile yemek fotoğrafından porsiyon gramajı (<code>estimatedGrams</code>) ve makro hesaplayan, kalan makro açığını gramaj bazında çözen deterministik <code>solveMacroGap</code> algoritması, Open Food Facts barkod sağlık radarı (NOVA/Nutri-Score) ve Dexie.js IndexedDB içeren Offline-First PWA & Capacitor 8 Android APK uygulaması.</p>
                 <div class="project-techs">
                     <span>React 19</span>
-                    <span>TypeScript</span>
-                    <span>Gemini Vision</span>
-                    <span>Capacitor APK</span>
+                    <span>TypeScript 6</span>
+                    <span>Tailwind CSS 4</span>
+                    <span>Gemini 2.5 Vision</span>
+                    <span>Dexie.js</span>
+                    <span>Capacitor 8 APK</span>
                 </div>
             </div>
 
@@ -106,31 +181,33 @@
                 <div class="project-header">
                     <h3>🧠 EduBrain-AI</h3>
                     <div class="project-links">
-                        <a href="https://github.com/talha4111/EduBrain-AI" target="_blank" title="GitHub">GitHub ↗</a>
+                        <a href="https://github.com/talha4111/EduBrain-AI" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc">Çok sayfalı PDF ve el yazısı ders notu fotoğraflarını Gemini 2.0 Vision ile Markdown'a dönüştüren, iki aşamalı hibrit parçalama ve ChromaDB vektör veritabanı ile kaynak referanslı yanıtlar üreten Multimodal RAG asistanı.</p>
+                <p class="project-desc" data-tr="Çok sayfalı PDF ve el yazısı ders notu fotoğraflarını Gemini 2.0 Flash Vision ile yapılandırılmış Markdown'a dönüştüren, iki aşamalı hibrit parçalama (MarkdownHeader + Recursive) ve ChromaDB vektör veritabanı (gemini-embedding-001) ile kaynak referanslı yanıtlar üreten Multimodal RAG asistanı." data-en="Multimodal RAG assistant converting multi-page PDFs and handwritten lecture notes into structured Markdown via Gemini 2.0 Flash Vision, indexing with two-stage hybrid chunking into ChromaDB (gemini-embedding-001) for source-cited Q&A.">Çok sayfalı PDF ve el yazısı ders notu fotoğraflarını Gemini 2.0 Flash Vision ile yapılandırılmış Markdown'a dönüştüren, iki aşamalı hibrit parçalama (MarkdownHeader + Recursive) ve ChromaDB vektör veritabanı (<code>gemini-embedding-001</code>) ile kaynak referanslı yanıtlar üreten Multimodal RAG asistanı.</p>
                 <div class="project-techs">
-                    <span>LangChain</span>
+                    <span>Python</span>
+                    <span>LangChain (LCEL)</span>
                     <span>ChromaDB</span>
-                    <span>Gemini Vision</span>
-                    <span>RAG</span>
+                    <span>Gemini 2.0 Vision</span>
+                    <span>Streamlit</span>
                 </div>
             </div>
 
             <div class="project-card glass-panel">
                 <div class="project-header">
-                    <h3>📚 LingoReader AI</h3>
+                    <h3>📚 LingoReader AI (LingoProje)</h3>
                     <div class="project-links">
-                        <a href="https://github.com/talha4111/LingoProje" target="_blank" title="GitHub">GitHub ↗</a>
+                        <a href="https://github.com/talha4111/LingoProje" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc">OpenAI Whisper ve yt-dlp ile YouTube videolarından senkronize karaoke transkripti çıkaran, Gemini 2.5 Flash SSE streaming öğretmen ve interaktif PDF/hikaye okuyucu barındıran İngilizce öğrenme platformu.</p>
+                <p class="project-desc" data-tr="OpenAI Whisper ve yt-dlp ile YouTube videolarından milisaniye senkronizasyonlu karaoke transkripti çıkaran; ekran metin bağlamını ve 12 turluk sohbet geçmişini enjekte ederek Flask Server-Sent Events (SSE) üzerinden gerçek zamanlı yanıt üreten dil öğrenme platformu." data-en="Language learning platform extracting timestamped karaoke transcripts from YouTube via yt-dlp and OpenAI Whisper, paired with a real-time Flask Server-Sent Events (SSE) Gemini 2.5 Flash tutor injecting screen context and 12-turn memory.">OpenAI Whisper ve <code>yt-dlp</code> ile YouTube videolarından milisaniye senkronizasyonlu karaoke transkripti çıkaran; ekran metin bağlamını ve 12 turluk sohbet geçmişini enjekte ederek Flask Server-Sent Events (SSE) üzerinden gerçek zamanlı yanıt üreten dil öğrenme platformu.</p>
                 <div class="project-techs">
+                    <span>Python</span>
                     <span>Flask SSE</span>
-                    <span>OpenAI Whisper</span>
-                    <span>Gemini 2.5</span>
-                    <span>JS SPA</span>
+                    <span>OpenAI Whisper ASR</span>
+                    <span>Gemini 2.5 Flash</span>
+                    <span>yt-dlp & FFmpeg</span>
                 </div>
             </div>
 
@@ -138,14 +215,14 @@
                 <div class="project-header">
                     <h3>⚙️ PROLAB1 Zamanlama Simülatörü</h3>
                     <div class="project-links">
-                        <a href="https://github.com/talha4111/PROLAB1" target="_blank" title="GitHub">GitHub ↗</a>
+                        <a href="https://github.com/talha4111/PROLAB1" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc">Konum değişim maliyeti kısıtı altında 4 paralel teknisyen için SJF, Priority, Round Robin ve tamamlanma süresini %15 düşüren (%96.76 verimlilik) özgün sezgisel algoritma + deterministik zaman yolculuğu içeren C99 simülatörü.</p>
+                <p class="project-desc" data-tr="Konum değişim maliyeti (1 birim intikal cezası) altında 4 paralel teknisyen için SJF, Priority, Round Robin ve 100 görevlik benchmark süresini 200 birimden 170 birime (-%15.0) düşürüp %96.76 kaynak verimliliği sağlayan özgün algoritma + deterministik zaman yolculuğu (zamana_git) içeren C99 simülatörü." data-en="Modular C99 scheduling simulator modeling 4 parallel technicians across 5 locations with transition penalties and deterministic time-travel state replay (zamana_git); custom heuristic reduced 100-task makespan by 15.0% (200 to 170 units) at 96.76% utilization.">Konum değişim maliyeti (1 birim intikal cezası) altında 4 paralel teknisyen için SJF, Priority, Round Robin ve 100 görevlik benchmark süresini 200 birimden 170 birime (<strong>-%15.0</strong>) düşürüp <strong>%96.76 kaynak verimliliği</strong> sağlayan özgün algoritma + deterministik zaman yolculuğu (<code>zamana_git</code>) içeren C99 simülatörü.</p>
                 <div class="project-techs">
-                    <span>C99</span>
+                    <span>C (C99)</span>
                     <span>OS Scheduling</span>
-                    <span>Heuristics</span>
+                    <span>Heuristic Optimization</span>
                     <span>IEEE Paper</span>
                 </div>
             </div>
@@ -154,30 +231,31 @@
                 <div class="project-header">
                     <h3>📊 Sales Predictor (prolab2)</h3>
                     <div class="project-links">
-                        <a href="https://github.com/talha4111/prolab2" target="_blank" title="GitHub">GitHub ↗</a>
+                        <a href="https://github.com/talha4111/prolab2" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc">Harici ML kütüphanesi kullanmadan saf Java ile sıfırdan gerçeklenen PriorityQueue Öklid KNN ve Gini Impurity CART Karar Ağacı modelleri; Apache POI ve SwingWorker destekli masaüstü performans analiz platformu.</p>
+                <p class="project-desc" data-tr="Harici ML kütüphanesi kullanmadan saf Java 11+ ile sıfırdan gerçeklenen PriorityQueue Öklid KNN ve özyineli Gini Impurity CART Karar Ağacı modelleri; Apache POI Excel veri hattı, SwingWorker asenkron iş parçacığı ve Graphics2D özel grafik motoru." data-en="Pure Java 11+ implementation of PriorityQueue Euclidean KNN and recursive Gini Impurity CART Decision Tree classifiers from scratch, featuring an Apache POI Excel pipeline, SwingWorker async threading, and custom Graphics2D charts.">Harici ML kütüphanesi kullanmadan saf Java 11+ ile sıfırdan gerçeklenen <code>PriorityQueue</code> Öklid KNN ve özyineli Gini Impurity CART Karar Ağacı modelleri; Apache POI Excel veri hattı, <code>SwingWorker</code> asenkron iş parçacığı ve <code>Graphics2D</code> özel grafik motoru.</p>
                 <div class="project-techs">
                     <span>Java 11+</span>
-                    <span>Swing GUI</span>
-                    <span>KNN & CART</span>
+                    <span>Swing & Graphics2D</span>
+                    <span>From-Scratch KNN & CART</span>
                     <span>Apache POI</span>
                 </div>
             </div>
 
             <div class="project-card glass-panel">
                 <div class="project-header">
-                    <h3>🗄️ JSON to SQL Converter (prolab3)</h3>
+                    <h3>🗄️ JSON to SQL 3NF Converter (prolab3)</h3>
                     <div class="project-links">
-                        <a href="https://github.com/talha4111/prolab3" target="_blank" title="GitHub">GitHub ↗</a>
+                        <a href="https://github.com/talha4111/prolab3" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc">Karmaşık ve şemasız (schema-less) iç içe JSON dosyalarını özyineli bir algoritmayla analiz ederek Foreign Key bağlantılı 3NF ilişkisel SQLite tablolarına dönüştüren 9 modüllü PyQt5 masaüstü uygulaması.</p>
+                <p class="project-desc" data-tr="Karmaşık ve şemasız (schema-less) iç içe JSON dosyalarını özyineli bir algoritmayla analiz ederek otomatik Primary/Foreign Key bağlantılı 3NF ilişkisel SQLite tablolarına dönüştüren 9 modüllü Python & PyQt5 masaüstü uygulaması." data-en="9-module Python & PyQt5 desktop application that recursively parses nested, schema-less JSON documents and normalizes them into 3NF relational SQLite tables with automated Primary/Foreign Key constraints.">Karmaşık ve şemasız (schema-less) iç içe JSON dosyalarını özyineli bir algoritmayla analiz ederek otomatik Primary/Foreign Key bağlantılı 3NF ilişkisel SQLite tablolarına dönüştüren 9 modüllü Python & PyQt5 masaüstü uygulaması.</p>
                 <div class="project-techs">
                     <span>Python</span>
                     <span>PyQt5</span>
                     <span>SQLite 3NF</span>
+                    <span>Schema Normalization</span>
                 </div>
             </div>
 
@@ -185,30 +263,48 @@
                 <div class="project-header">
                     <h3>🚄 TCDD YHT Ticket Bot</h3>
                     <div class="project-links">
-                        <a href="https://github.com/talha4111/yht-ticket-bot" target="_blank" title="GitHub">GitHub ↗</a>
+                        <a href="https://github.com/talha4111/yht-ticket-bot" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc">TCDD hızlı tren seferlerini 7/24 Headless Chrome ve Regex ile tarayan, boş koltuk açıldığında anında Telegram bildirimi gönderen ve Paramiko SSH/SFTP ile Linux VPS sunucularına dağıtılan otomasyon sistemi.</p>
+                <p class="project-desc" data-tr="TCDD hızlı tren seferlerini 7/24 Headless Chrome (Selenium) ve Regex ile tarayan, ekonomi koltuk kontenjanı açıldığında saniyeler içinde Telegram bildirimi gönderen ve Paramiko SSH/SFTP ile Linux VPS sunucularına otonom dağıtılan sistem." data-en="24/7 Headless Chrome (Selenium) and Regex scanner for TCDD high-speed train routes that dispatches instant Telegram Bot alerts upon seat availability, equipped with automated Paramiko SSH/SFTP Linux VPS deployment.">TCDD hızlı tren seferlerini 7/24 Headless Chrome (Selenium) ve Regex ile tarayan, ekonomi koltuk kontenjanı açıldığında saniyeler içinde Telegram bildirimi gönderen ve Paramiko SSH/SFTP ile Linux VPS sunucularına otonom dağıtılan sistem.</p>
                 <div class="project-techs">
                     <span>Python</span>
-                    <span>Selenium</span>
-                    <span>Telegram API</span>
-                    <span>Paramiko</span>
+                    <span>Selenium WebDriver</span>
+                    <span>Telegram Bot API</span>
+                    <span>Paramiko SSH</span>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORPORATE CV DOWNLOAD SECTION -->
+    <section id="cv-section" class="cv-showcase-section">
+        <div class="glass-panel cv-panel">
+            <span class="flagship-badge" data-tr="📄 ATS & YAPAY ZEKA TARAMA UYUMLU KURUMSAL ÖZGEÇMİŞ" data-en="📄 ATS & AI-SCREENING OPTIMIZED CORPORATE RESUME">📄 ATS & YAPAY ZEKA TARAMA UYUMLU KURUMSAL ÖZGEÇMİŞ</span>
+            <h2 data-tr="Kurumsal CV'mi İndirin (TR / EN)" data-en="Download My Corporate CV (TR / EN)">Kurumsal CV'mi İndirin (TR / EN)</h2>
+            <p data-tr="Workday, Greenhouse, Lever ve kurumsal İK yapay zeka tarayıcılarıyla %100 uyumlu, tek sayfa A4 vektörel PDF formatındaki güncel özgeçmişimi Türkçe veya İngilizce olarak doğrudan indirebilirsiniz." data-en="Download my 1-page A4 vector PDF resume directly in Turkish or English, 100% compatible with Workday, Greenhouse, Lever, and enterprise AI screening systems.">
+                Workday, Greenhouse, Lever ve kurumsal İK yapay zeka tarayıcılarıyla %100 uyumlu, tek sayfa A4 vektörel PDF formatındaki güncel özgeçmişimi Türkçe veya İngilizce olarak doğrudan indirebilirsiniz.
+            </p>
+            <div class="cta-buttons" style="justify-content: center; flex-wrap: wrap;">
+                <a href="Talha_Gurler_CV_TR.pdf" target="_blank" class="btn primary-btn">🇹🇷 Türkçe Özgeçmiş (PDF İndir)</a>
+                <a href="Talha_Gurler_CV_EN.pdf" target="_blank" class="btn secondary-btn" style="border-color: rgba(59,130,246,0.5);">🇬🇧 English Resume (Download PDF)</a>
             </div>
         </div>
     </section>
 
     <section id="contact" class="contact-section">
         <div class="glass-panel contact-panel">
-            <h2>İletişime Geçin</h2>
-            <p>Staj, aday mühendislik, yazılım projeleri veya işbirlikleri için bana doğrudan ulaşabilirsiniz.</p>
-            <a href="mailto:talhagurler11@gmail.com" class="btn primary-btn">talhagurler11@gmail.com</a>
+            <h2 data-tr="İletişime Geçin" data-en="Get In Touch">İletişime Geçin</h2>
+            <p data-tr="Yapay Zeka, Kantitatif FinTech, Full-Stack/Mobil yazılım mühendisliği staj, aday mühendislik veya proje işbirlikleri için bana doğrudan ulaşabilirsiniz." data-en="Feel free to reach out for AI/ML, Quantitative FinTech, or Full-Stack/Mobile software engineering internships, part-time roles, or collaborations.">Yapay Zeka, Kantitatif FinTech, Full-Stack/Mobil yazılım mühendisliği staj, aday mühendislik veya proje işbirlikleri için bana doğrudan ulaşabilirsiniz.</p>
+            <div class="cta-buttons" style="justify-content: center; flex-wrap: wrap;">
+                <a href="mailto:talhagurler11@gmail.com" class="btn primary-btn">✉️ talhagurler11@gmail.com</a>
+                <a href="https://github.com/talha4111" target="_blank" class="btn secondary-btn">🔗 github.com/talha4111</a>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Talha Gürler. Tüm hakları saklıdır.</p>
+        <p>&copy; 2026 Talha Gürler • Kocaeli Üniversitesi Bilgisayar Mühendisliği</p>
     </footer>
 
     <script src="script.js"></script>
