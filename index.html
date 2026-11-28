@@ -66,6 +66,7 @@
                 <div class="skills-grid">
                     <span class="skill-tag">🤖 XGBoost, Optuna & AI/ML</span>
                     <span class="skill-tag">🧠 Multimodal RAG & ChromaDB</span>
+                    <span class="skill-tag">🔌 MCP Server & Hybrid RAG (BM25/RRF)</span>
                     <span class="skill-tag">📊 Binance Futures & QuantConnect</span>
                     <span class="skill-tag">⚛️ React 19, TS 6 & Capacitor APK</span>
                     <span class="skill-tag">⚙️ C++20 MAPF, C99 & Java 11+</span>
@@ -189,14 +190,16 @@
                         <a href="https://github.com/talha4111/sporproje" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc" data-tr="Gemini 2.5 Flash Vision ile yemek fotoğrafından porsiyon gramajı (estimatedGrams) ve makro hesaplayan, kalan makro açığını gramaj bazında çözen deterministik solveMacroGap algoritması, Open Food Facts barkod sağlık radarı (NOVA/Nutri-Score) ve Dexie.js IndexedDB içeren Offline-First PWA & Capacitor 8 Android APK uygulaması." data-en="Offline-First PWA & Capacitor 8 Android APK using Gemini 2.5 Flash Vision to estimate meal gram weights and macros from photos, featuring a deterministic solveMacroGap solver, Open Food Facts barcode health radar (NOVA/Nutri-Score), and Dexie.js IndexedDB persistence.">Gemini 2.5 Flash Vision ile yemek fotoğrafından porsiyon gramajı (<code>estimatedGrams</code>) ve makro hesaplayan, kalan makro açığını gramaj bazında çözen deterministik <code>solveMacroGap</code> algoritması, Open Food Facts barkod sağlık radarı (NOVA/Nutri-Score) ve Dexie.js IndexedDB içeren Offline-First PWA & Capacitor 8 Android APK uygulaması.</p>
+                <p class="project-desc" data-tr="Gemini 2.5 Flash Vision ile yemek fotoğrafından porsiyon gramajı (estimatedGrams) ve makro hesaplayan, kalan makro açığını gramaj bazında çözen deterministik solveMacroGap algoritmalı Offline-First PWA & Capacitor 8 Android APK. API anahtarını istemciden çıkaran Netlify serverless Gemini proxy, Open Food Facts barkod sağlık radarı (NOVA/Nutri-Score, sodyum→tuz normalizasyonu), DST/artık yıl güvenli tarih ve NaN-korumalı metabolizma (BMR/TDEE) hesapları; 43 Vitest birim testi ile doğrulanmıştır." data-en="Offline-First PWA & Capacitor 8 Android APK using Gemini 2.5 Flash Vision to estimate meal gram weights and macros from photos, with a deterministic solveMacroGap solver. Features a Netlify serverless Gemini proxy (no client-side API key), Open Food Facts barcode health radar (NOVA/Nutri-Score, sodium→salt normalization), DST/leap-year-safe dates and NaN-hardened BMR/TDEE math, verified by 43 Vitest unit tests.">Gemini 2.5 Flash Vision ile yemek fotoğrafından porsiyon gramajı (<code>estimatedGrams</code>) ve makro hesaplayan, kalan makro açığını gramaj bazında çözen deterministik <code>solveMacroGap</code> algoritmalı Offline-First PWA & Capacitor 8 Android APK. API anahtarını istemciden çıkaran Netlify serverless Gemini proxy, Open Food Facts barkod sağlık radarı (NOVA/Nutri-Score, sodyum→tuz normalizasyonu), DST/artık yıl güvenli tarih ve NaN-korumalı metabolizma (BMR/TDEE) hesapları; 43 Vitest birim testi ile doğrulanmıştır.</p>
                 <div class="project-techs">
                     <span>React 19</span>
                     <span>TypeScript 6</span>
                     <span>Tailwind CSS 4</span>
                     <span>Gemini 2.5 Vision</span>
+                    <span>Netlify Functions</span>
                     <span>Dexie.js</span>
                     <span>Capacitor 8 APK</span>
+                    <span>Vitest (43)</span>
                 </div>
             </div>
 
@@ -207,13 +210,16 @@
                         <a href="https://github.com/talha4111/EduBrain-AI" target="_blank">GitHub ↗</a>
                     </div>
                 </div>
-                <p class="project-desc" data-tr="Çok sayfalı PDF ve el yazısı ders notu fotoğraflarını Gemini 2.0 Flash Vision ile yapılandırılmış Markdown'a dönüştüren, iki aşamalı hibrit parçalama (MarkdownHeader + Recursive) ve ChromaDB vektör veritabanı (gemini-embedding-001) ile kaynak referanslı yanıtlar üreten Multimodal RAG asistanı." data-en="Multimodal RAG assistant converting multi-page PDFs and handwritten lecture notes into structured Markdown via Gemini 2.0 Flash Vision, indexing with two-stage hybrid chunking into ChromaDB (gemini-embedding-001) for source-cited Q&A.">Çok sayfalı PDF ve el yazısı ders notu fotoğraflarını Gemini 2.0 Flash Vision ile yapılandırılmış Markdown'a dönüştüren, iki aşamalı hibrit parçalama (MarkdownHeader + Recursive) ve ChromaDB vektör veritabanı (<code>gemini-embedding-001</code>) ile kaynak referanslı yanıtlar üreten Multimodal RAG asistanı.</p>
+                <p class="project-desc" data-tr="PDF, görsel ve el yazısı ders notlarını Gemini Vision (google-genai) ile Markdown'a dönüştüren kurumsal Multimodal RAG asistanı. ChromaDB semantik + Okapi BM25 aramasını Reciprocal Rank Fusion (RRF) ile birleştiren hibrit arama, çoklu çalışma alanı izolasyonu ve SHA-256 tekilleştirme; Grounding Skoru (0-100%), atıf kapsamı ve düşük alakada yanıt reddi (abstention) yapan RAG değerlendiricisi; Claude/IDE ajanlarına 3 araç sunan stdio MCP sunucusu, Docker imajı ve 13 pytest testi." data-en="Enterprise multimodal RAG assistant converting PDFs, images and handwritten notes into Markdown via Gemini Vision (google-genai). Hybrid retrieval fusing ChromaDB semantic and Okapi BM25 search with Reciprocal Rank Fusion (RRF), multi-workspace isolation and SHA-256 dedup; a RAG evaluator with Grounding Score (0-100%), citation coverage and low-relevance abstention; a stdio MCP server exposing 3 tools to AI agents, Docker image and 13 pytest tests.">PDF, görsel ve el yazısı ders notlarını Gemini Vision (<code>google-genai</code>) ile Markdown'a dönüştüren kurumsal Multimodal RAG asistanı. ChromaDB semantik + Okapi BM25 aramasını Reciprocal Rank Fusion (RRF) ile birleştiren hibrit arama, çoklu çalışma alanı izolasyonu ve SHA-256 tekilleştirme; Grounding Skoru (0-100%), atıf kapsamı ve düşük alakada yanıt reddi (abstention) yapan RAG değerlendiricisi; Claude/IDE ajanlarına 3 araç sunan stdio MCP sunucusu, Docker imajı ve 13 pytest testi.</p>
                 <div class="project-techs">
                     <span>Python</span>
-                    <span>LangChain (LCEL)</span>
+                    <span>Gemini Vision</span>
                     <span>ChromaDB</span>
-                    <span>Gemini 2.0 Vision</span>
+                    <span>BM25 + RRF</span>
+                    <span>MCP Server</span>
                     <span>Streamlit</span>
+                    <span>Docker</span>
+                    <span>Pytest</span>
                 </div>
             </div>
 
